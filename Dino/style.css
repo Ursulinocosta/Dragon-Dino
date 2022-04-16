@@ -1,0 +1,57 @@
+body {
+ background: rgb(255, 255, 255);
+}
+.dino {
+  position: absolute;
+  bottom: 0;
+  background-image: url(img/goku.png);
+  width: 161px;
+  height: 199px;
+}
+
+.cactus {
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  bottom: 0;
+  background-image: url(img/kuririn1_.png);
+}
+
+.game-over {
+  font-family: fantasy;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin: 50px 0;
+  font-family: arial;
+}
+
+
+
+@keyframes slideright {
+  from {
+      background-position: 70000%;
+  }
+  to {
+      background-position: 0%;
+  }
+}
+
+.background {
+  position: absolute;
+  bottom: 0px;
+  background-image: url('img/background.png');
+  background-repeat: repeat-x;
+  animation: slideright 600s infinite linear;
+  -webkit-animation: slideright 600s infinite linear;
+  width: 100%;
+  height: 400px;
+}
+
+.inicio{
+  color: rgba(0, 0, 0, 0.596);
+  font-family: fantasy;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
